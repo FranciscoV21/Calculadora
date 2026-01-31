@@ -283,6 +283,7 @@
             this.borrar.TabIndex = 22;
             this.borrar.Text = "Borrar";
             this.borrar.UseVisualStyleBackColor = true;
+            this.borrar.Click += new System.EventHandler(this.Eliminar_Click);
             // 
             // operaciones
             // 

@@ -26,5 +26,13 @@ namespace Calculadora
             // y lo añadimos al textBox
             operaciones.Text += botonPresionado.Text;
         }
+        private void Eliminar_Click(object sender, EventArgs e)
+        {
+                       if (operaciones.Text.Length > 0)
+            {
+                operaciones.Text = operaciones.Text.Substring(0, operaciones.Text.Length - 1);
+            }
+
+        }
     }
 }
