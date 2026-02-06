@@ -16,6 +16,12 @@ namespace Calculadora
         public Form1()
         {
             InitializeComponent();
+            ahexa.Enabled = false;
+            bhexa.Enabled = false;
+            chexa.Enabled = false;
+            dhexa.Enabled = false;
+            ehexa.Enabled = false;
+            fhexa.Enabled = false;
         }
 
         private void Numero_Click(object sender, EventArgs e)
@@ -29,8 +35,84 @@ namespace Calculadora
         }
         private void igual_Click(object sender, EventArgs e)
         {
-            string input = operaciones.Text; // Ejemplo: "1010 + FF - 20"
-            string[] partes = Regex.Split(input, @"([\+\-\x\/])|\s+");
+            try
+            {
+                string input = operaciones.Text;
+                // 1. Separamos los números de los operadores
+                string[] partes = Regex.Split(input, @"([+\-x/])");
+
+                double total = 0;
+                string operadorActual = "+"; // Empezamos sumando el primer número al total (0)
+
+                foreach (string parte in partes)
+                {
+                    string token = parte.Trim(); // Quitamos los espacios que pusiste para que se vea bonito
+                    if (string.IsNullOrEmpty(token)) continue;
+
+                    // 2. CORRECCIÓN: Comprobamos si es un operador de forma directa
+                    if (token == "+" || token == "-" || token == "x" || token == "/")
+                    {
+                        operadorActual = token;
+                    }
+                    else
+                    {
+                        // 3. Es un número, lo convertimos y aplicamos la operación
+                        double valorConvertido = ConvertirADecimal(token);
+
+                        switch (operadorActual)
+                        {
+                            case "+": total += valorConvertido; break;
+                            case "-": total -= valorConvertido; break;
+                            case "x": total *= valorConvertido; break;
+                            case "/":
+                                if (valorConvertido != 0) total /= valorConvertido;
+                                else { MessageBox.Show("No se puede dividir por cero"); return; }
+                                break;
+                        }
+                    }
+                }
+
+                // 4. Mostramos el resultado
+                resultado.Text = total.ToString();
+
+                // TIP: Re-habilitamos todos los botones para la siguiente operación
+                HabilitarTodosLosBotones();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error de formato. Asegúrate de usar bien los prefijos 0x o 0b.");
+            }
+        }
+        private void HabilitarTodosLosBotones()
+        {
+            ahexa.Enabled = true; bhexa.Enabled = true; chexa.Enabled = true;
+            dhexa.Enabled = true; ehexa.Enabled = true; fhexa.Enabled = true;
+            dos.Enabled = true; tres.Enabled = true; cuatro.Enabled = true;
+            cinco.Enabled = true; seis.Enabled = true; siete.Enabled = true;
+            ocho.Enabled = true; nueve.Enabled = true;
+            button2.Enabled = true; // Botón Binario
+        }
+
+        private double ConvertirADecimal(string numero)
+        {
+            // Usamos .ToLower() para que acepte 0X o 0x por igual
+            string num = numero.ToLower();
+
+            if (num.StartsWith("0x"))
+            {
+                // Hexadecimal
+                return Convert.ToInt64(num.Substring(2), 16);
+            }
+            else if (num.StartsWith("0b"))
+            {
+                // Binario
+                return Convert.ToInt64(num.Substring(2), 2);
+            }
+            else
+            {
+                // Decimal (aseguramos que no haya letras accidentales)
+                return double.Parse(num);
+            }
         }
         private void Eliminar_Click(object sender, EventArgs e)
         {
@@ -44,6 +126,14 @@ namespace Calculadora
         private void hexa_Click(object sender, EventArgs e)
         {
             operaciones.Text += "0x";
+            ahexa.Enabled = true;
+            bhexa.Enabled = true;
+            chexa.Enabled = true;
+            dhexa.Enabled = true;
+            ehexa.Enabled = true;
+            fhexa.Enabled = true;
+             button2.Enabled = true; // Habilitar el botón Binario
+
         }
 
         private void button2_Click(object sender, EventArgs e) // Botón Binario

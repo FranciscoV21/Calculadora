@@ -66,7 +66,7 @@
             this.Igual.TabIndex = 0;
             this.Igual.Text = "=";
             this.Igual.UseVisualStyleBackColor = true;
-            this.Igual.Click += new System.EventHandler(this.Numero_Click);
+            this.Igual.Click += new System.EventHandler(this.igual_Click);
             // 
             // suma
             // 
