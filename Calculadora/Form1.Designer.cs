@@ -18,6 +18,7 @@
                 components.Dispose();
             }
             base.Dispose(disposing);
+            //bENFEF
         }
 
         #region Código generado por el Diseñador de Windows Forms
