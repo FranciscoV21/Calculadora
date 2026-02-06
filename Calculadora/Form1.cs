@@ -34,5 +34,15 @@ namespace Calculadora
             }
 
         }
+
+        private void hexa_Click(object sender, EventArgs e)
+        {
+            operaciones.Text += "0x";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            operaciones.Text += "0b";
+        }
     }
 }
