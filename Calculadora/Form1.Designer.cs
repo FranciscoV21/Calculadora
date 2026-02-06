@@ -19,6 +19,7 @@
             }
             base.Dispose(disposing);
             //bENFEF
+            //Hola Jair wuu hola x2
         }
 
         #region Código generado por el Diseñador de Windows Forms
