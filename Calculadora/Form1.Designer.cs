@@ -317,6 +317,7 @@
             this.operaciones.Name = "operaciones";
             this.operaciones.Size = new System.Drawing.Size(422, 26);
             this.operaciones.TabIndex = 23;
+            this.operaciones.TextChanged += new System.EventHandler(this.operaciones_TextChanged);
             // 
             // resultado
             // 
@@ -325,6 +326,7 @@
             this.resultado.Name = "resultado";
             this.resultado.Size = new System.Drawing.Size(422, 26);
             this.resultado.TabIndex = 24;
+            this.resultado.TextChanged += new System.EventHandler(this.resultado_TextChanged);
             // 
             // hexa
             // 
