@@ -44,7 +44,7 @@ namespace Calculadora
             {
                 string input = operaciones.Text;
                 // 1. Separamos los números de los operadores
-                string[] partes = Regex.Split(input, @"([+\-x/])");
+                string[] partes = Regex.Split(input, @"([+\-/]|(?<!0)x)");
 
                 double total = 0;
                 string operadorActual = "+"; // Empezamos sumando el primer número al total (0)
