@@ -32,6 +32,11 @@ namespace Calculadora
             // Usamos el Texto del botón (que ya es "1", "2", etc.) 
             // y lo añadimos al textBox
             operaciones.Text += botonPresionado.Text;
+            if(botonPresionado == suma || botonPresionado == resta || botonPresionado == multiplicacion || botonPresionado == division)
+            {
+                // Si el botón presionado es un operador, re-habilitamos los botones de números y letras
+                HabilitarTodosLosBotones();
+            }
         }
         private void igual_Click(object sender, EventArgs e)
         {
