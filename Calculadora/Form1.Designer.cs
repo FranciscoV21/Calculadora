@@ -59,10 +59,9 @@
             // 
             // Igual
             // 
-            this.Igual.Location = new System.Drawing.Point(363, 643);
-            this.Igual.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Igual.Location = new System.Drawing.Point(242, 418);
             this.Igual.Name = "Igual";
-            this.Igual.Size = new System.Drawing.Size(104, 35);
+            this.Igual.Size = new System.Drawing.Size(69, 23);
             this.Igual.TabIndex = 0;
             this.Igual.Text = "=";
             this.Igual.UseVisualStyleBackColor = true;
@@ -70,10 +69,9 @@
             // 
             // suma
             // 
-            this.suma.Location = new System.Drawing.Point(363, 577);
-            this.suma.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.suma.Location = new System.Drawing.Point(242, 375);
             this.suma.Name = "suma";
-            this.suma.Size = new System.Drawing.Size(104, 35);
+            this.suma.Size = new System.Drawing.Size(69, 23);
             this.suma.TabIndex = 1;
             this.suma.Text = " + ";
             this.suma.UseVisualStyleBackColor = true;
@@ -81,10 +79,9 @@
             // 
             // resta
             // 
-            this.resta.Location = new System.Drawing.Point(363, 517);
-            this.resta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.resta.Location = new System.Drawing.Point(242, 336);
             this.resta.Name = "resta";
-            this.resta.Size = new System.Drawing.Size(104, 35);
+            this.resta.Size = new System.Drawing.Size(69, 23);
             this.resta.TabIndex = 2;
             this.resta.Text = " - ";
             this.resta.UseVisualStyleBackColor = true;
@@ -92,10 +89,9 @@
             // 
             // multiplicacion
             // 
-            this.multiplicacion.Location = new System.Drawing.Point(363, 457);
-            this.multiplicacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.multiplicacion.Location = new System.Drawing.Point(242, 297);
             this.multiplicacion.Name = "multiplicacion";
-            this.multiplicacion.Size = new System.Drawing.Size(104, 35);
+            this.multiplicacion.Size = new System.Drawing.Size(69, 23);
             this.multiplicacion.TabIndex = 3;
             this.multiplicacion.Text = " x ";
             this.multiplicacion.UseVisualStyleBackColor = true;
@@ -103,10 +99,9 @@
             // 
             // division
             // 
-            this.division.Location = new System.Drawing.Point(363, 397);
-            this.division.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.division.Location = new System.Drawing.Point(242, 258);
             this.division.Name = "division";
-            this.division.Size = new System.Drawing.Size(104, 35);
+            this.division.Size = new System.Drawing.Size(69, 23);
             this.division.TabIndex = 4;
             this.division.Text = " / ";
             this.division.UseVisualStyleBackColor = true;
@@ -114,10 +109,9 @@
             // 
             // nueve
             // 
-            this.nueve.Location = new System.Drawing.Point(270, 457);
-            this.nueve.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.nueve.Location = new System.Drawing.Point(180, 297);
             this.nueve.Name = "nueve";
-            this.nueve.Size = new System.Drawing.Size(84, 35);
+            this.nueve.Size = new System.Drawing.Size(56, 23);
             this.nueve.TabIndex = 5;
             this.nueve.Text = "9";
             this.nueve.UseVisualStyleBackColor = true;
@@ -125,10 +119,9 @@
             // 
             // ocho
             // 
-            this.ocho.Location = new System.Drawing.Point(177, 457);
-            this.ocho.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ocho.Location = new System.Drawing.Point(118, 297);
             this.ocho.Name = "ocho";
-            this.ocho.Size = new System.Drawing.Size(84, 35);
+            this.ocho.Size = new System.Drawing.Size(56, 23);
             this.ocho.TabIndex = 6;
             this.ocho.Text = "8";
             this.ocho.UseVisualStyleBackColor = true;
@@ -136,10 +129,9 @@
             // 
             // siete
             // 
-            this.siete.Location = new System.Drawing.Point(84, 457);
-            this.siete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.siete.Location = new System.Drawing.Point(56, 297);
             this.siete.Name = "siete";
-            this.siete.Size = new System.Drawing.Size(84, 35);
+            this.siete.Size = new System.Drawing.Size(56, 23);
             this.siete.TabIndex = 7;
             this.siete.Text = "7";
             this.siete.UseVisualStyleBackColor = true;
@@ -147,10 +139,9 @@
             // 
             // chexa
             // 
-            this.chexa.Location = new System.Drawing.Point(4, 457);
-            this.chexa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chexa.Location = new System.Drawing.Point(3, 297);
             this.chexa.Name = "chexa";
-            this.chexa.Size = new System.Drawing.Size(70, 35);
+            this.chexa.Size = new System.Drawing.Size(47, 23);
             this.chexa.TabIndex = 8;
             this.chexa.Text = "C";
             this.chexa.UseVisualStyleBackColor = true;
@@ -158,10 +149,9 @@
             // 
             // seis
             // 
-            this.seis.Location = new System.Drawing.Point(270, 517);
-            this.seis.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.seis.Location = new System.Drawing.Point(180, 336);
             this.seis.Name = "seis";
-            this.seis.Size = new System.Drawing.Size(84, 35);
+            this.seis.Size = new System.Drawing.Size(56, 23);
             this.seis.TabIndex = 9;
             this.seis.Text = "6";
             this.seis.UseVisualStyleBackColor = true;
@@ -169,10 +159,9 @@
             // 
             // cinco
             // 
-            this.cinco.Location = new System.Drawing.Point(177, 517);
-            this.cinco.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cinco.Location = new System.Drawing.Point(118, 336);
             this.cinco.Name = "cinco";
-            this.cinco.Size = new System.Drawing.Size(84, 35);
+            this.cinco.Size = new System.Drawing.Size(56, 23);
             this.cinco.TabIndex = 10;
             this.cinco.Text = "5";
             this.cinco.UseVisualStyleBackColor = true;
@@ -180,10 +169,9 @@
             // 
             // cuatro
             // 
-            this.cuatro.Location = new System.Drawing.Point(84, 517);
-            this.cuatro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cuatro.Location = new System.Drawing.Point(56, 336);
             this.cuatro.Name = "cuatro";
-            this.cuatro.Size = new System.Drawing.Size(84, 35);
+            this.cuatro.Size = new System.Drawing.Size(56, 23);
             this.cuatro.TabIndex = 11;
             this.cuatro.Text = "4";
             this.cuatro.UseVisualStyleBackColor = true;
@@ -191,10 +179,9 @@
             // 
             // tres
             // 
-            this.tres.Location = new System.Drawing.Point(270, 577);
-            this.tres.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tres.Location = new System.Drawing.Point(180, 375);
             this.tres.Name = "tres";
-            this.tres.Size = new System.Drawing.Size(84, 35);
+            this.tres.Size = new System.Drawing.Size(56, 23);
             this.tres.TabIndex = 12;
             this.tres.Text = "3";
             this.tres.UseVisualStyleBackColor = true;
@@ -202,10 +189,9 @@
             // 
             // dos
             // 
-            this.dos.Location = new System.Drawing.Point(177, 577);
-            this.dos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dos.Location = new System.Drawing.Point(118, 375);
             this.dos.Name = "dos";
-            this.dos.Size = new System.Drawing.Size(84, 35);
+            this.dos.Size = new System.Drawing.Size(56, 23);
             this.dos.TabIndex = 13;
             this.dos.Text = "2";
             this.dos.UseVisualStyleBackColor = true;
@@ -213,10 +199,9 @@
             // 
             // uno
             // 
-            this.uno.Location = new System.Drawing.Point(84, 577);
-            this.uno.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uno.Location = new System.Drawing.Point(56, 375);
             this.uno.Name = "uno";
-            this.uno.Size = new System.Drawing.Size(84, 35);
+            this.uno.Size = new System.Drawing.Size(56, 23);
             this.uno.TabIndex = 14;
             this.uno.Text = "1";
             this.uno.UseVisualStyleBackColor = true;
@@ -224,10 +209,9 @@
             // 
             // punto
             // 
-            this.punto.Location = new System.Drawing.Point(270, 643);
-            this.punto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.punto.Location = new System.Drawing.Point(180, 418);
             this.punto.Name = "punto";
-            this.punto.Size = new System.Drawing.Size(84, 35);
+            this.punto.Size = new System.Drawing.Size(56, 23);
             this.punto.TabIndex = 15;
             this.punto.Text = ".";
             this.punto.UseVisualStyleBackColor = true;
@@ -235,10 +219,9 @@
             // 
             // cero
             // 
-            this.cero.Location = new System.Drawing.Point(177, 643);
-            this.cero.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cero.Location = new System.Drawing.Point(118, 418);
             this.cero.Name = "cero";
-            this.cero.Size = new System.Drawing.Size(84, 35);
+            this.cero.Size = new System.Drawing.Size(56, 23);
             this.cero.TabIndex = 16;
             this.cero.Text = "0";
             this.cero.UseVisualStyleBackColor = true;
@@ -246,10 +229,9 @@
             // 
             // dhexa
             // 
-            this.dhexa.Location = new System.Drawing.Point(4, 517);
-            this.dhexa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dhexa.Location = new System.Drawing.Point(3, 336);
             this.dhexa.Name = "dhexa";
-            this.dhexa.Size = new System.Drawing.Size(70, 35);
+            this.dhexa.Size = new System.Drawing.Size(47, 23);
             this.dhexa.TabIndex = 17;
             this.dhexa.Text = "D";
             this.dhexa.UseVisualStyleBackColor = true;
@@ -257,10 +239,9 @@
             // 
             // ehexa
             // 
-            this.ehexa.Location = new System.Drawing.Point(4, 577);
-            this.ehexa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ehexa.Location = new System.Drawing.Point(3, 375);
             this.ehexa.Name = "ehexa";
-            this.ehexa.Size = new System.Drawing.Size(70, 35);
+            this.ehexa.Size = new System.Drawing.Size(47, 23);
             this.ehexa.TabIndex = 18;
             this.ehexa.Text = "E";
             this.ehexa.UseVisualStyleBackColor = true;
@@ -268,10 +249,9 @@
             // 
             // fhexa
             // 
-            this.fhexa.Location = new System.Drawing.Point(4, 643);
-            this.fhexa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.fhexa.Location = new System.Drawing.Point(3, 418);
             this.fhexa.Name = "fhexa";
-            this.fhexa.Size = new System.Drawing.Size(70, 35);
+            this.fhexa.Size = new System.Drawing.Size(47, 23);
             this.fhexa.TabIndex = 19;
             this.fhexa.Text = "F";
             this.fhexa.UseVisualStyleBackColor = true;
@@ -279,10 +259,9 @@
             // 
             // bhexa
             // 
-            this.bhexa.Location = new System.Drawing.Point(4, 397);
-            this.bhexa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bhexa.Location = new System.Drawing.Point(3, 258);
             this.bhexa.Name = "bhexa";
-            this.bhexa.Size = new System.Drawing.Size(70, 35);
+            this.bhexa.Size = new System.Drawing.Size(47, 23);
             this.bhexa.TabIndex = 20;
             this.bhexa.Text = "B";
             this.bhexa.UseVisualStyleBackColor = true;
@@ -290,10 +269,9 @@
             // 
             // ahexa
             // 
-            this.ahexa.Location = new System.Drawing.Point(4, 338);
-            this.ahexa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ahexa.Location = new System.Drawing.Point(3, 220);
             this.ahexa.Name = "ahexa";
-            this.ahexa.Size = new System.Drawing.Size(70, 35);
+            this.ahexa.Size = new System.Drawing.Size(47, 23);
             this.ahexa.TabIndex = 21;
             this.ahexa.Text = "A";
             this.ahexa.UseVisualStyleBackColor = true;
@@ -301,10 +279,9 @@
             // 
             // borrar
             // 
-            this.borrar.Location = new System.Drawing.Point(363, 338);
-            this.borrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.borrar.Location = new System.Drawing.Point(242, 220);
             this.borrar.Name = "borrar";
-            this.borrar.Size = new System.Drawing.Size(104, 35);
+            this.borrar.Size = new System.Drawing.Size(69, 23);
             this.borrar.TabIndex = 22;
             this.borrar.Text = "Borrar";
             this.borrar.UseVisualStyleBackColor = true;
@@ -312,28 +289,25 @@
             // 
             // operaciones
             // 
-            this.operaciones.Location = new System.Drawing.Point(18, 69);
-            this.operaciones.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.operaciones.Location = new System.Drawing.Point(12, 45);
             this.operaciones.Name = "operaciones";
-            this.operaciones.Size = new System.Drawing.Size(422, 26);
+            this.operaciones.Size = new System.Drawing.Size(283, 20);
             this.operaciones.TabIndex = 23;
             this.operaciones.TextChanged += new System.EventHandler(this.operaciones_TextChanged);
             // 
             // resultado
             // 
-            this.resultado.Location = new System.Drawing.Point(18, 137);
-            this.resultado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.resultado.Location = new System.Drawing.Point(12, 89);
             this.resultado.Name = "resultado";
-            this.resultado.Size = new System.Drawing.Size(422, 26);
+            this.resultado.Size = new System.Drawing.Size(283, 20);
             this.resultado.TabIndex = 24;
             this.resultado.TextChanged += new System.EventHandler(this.resultado_TextChanged);
             // 
             // hexa
             // 
-            this.hexa.Location = new System.Drawing.Point(84, 397);
-            this.hexa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.hexa.Location = new System.Drawing.Point(56, 258);
             this.hexa.Name = "hexa";
-            this.hexa.Size = new System.Drawing.Size(120, 35);
+            this.hexa.Size = new System.Drawing.Size(80, 23);
             this.hexa.TabIndex = 25;
             this.hexa.Text = "Hexadecimal";
             this.hexa.UseVisualStyleBackColor = true;
@@ -341,10 +315,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(226, 397);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Location = new System.Drawing.Point(151, 258);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 35);
+            this.button2.Size = new System.Drawing.Size(85, 23);
             this.button2.TabIndex = 26;
             this.button2.Text = "Binario";
             this.button2.UseVisualStyleBackColor = true;
@@ -352,9 +325,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 712);
+            this.ClientSize = new System.Drawing.Size(323, 463);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.hexa);
             this.Controls.Add(this.resultado);
@@ -382,9 +355,8 @@
             this.Controls.Add(this.resta);
             this.Controls.Add(this.suma);
             this.Controls.Add(this.Igual);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Super calcualdora";
             this.ResumeLayout(false);
             this.PerformLayout();
 

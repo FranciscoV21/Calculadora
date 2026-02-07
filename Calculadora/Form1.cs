@@ -51,17 +51,17 @@ namespace Calculadora
 
                 foreach (string parte in partes)
                 {
-                    string token = parte.Trim(); // Quitamos los espacios que pusiste para que se vea bonito
+                    string token = parte.Trim(); // Quitamos los espacios
                     if (string.IsNullOrEmpty(token)) continue;
 
-                    // 2. CORRECCIÓN: Comprobamos si es un operador de forma directa
+                    // 2. Comprobamos si es un operador de forma directa
                     if (token == "+" || token == "-" || token == "x" || token == "/")
                     {
                         operadorActual = token;
                     }
                     else
                     {
-                        // 3. Es un número, lo convertimos y aplicamos la operación
+                        // 3. Si es un número, lo convertimos y aplicamos la operación
                         double valorConvertido = ConvertirADecimal(token);
 
                         switch (operadorActual)
@@ -71,16 +71,18 @@ namespace Calculadora
                             case "x": total *= valorConvertido; break;
                             case "/":
                                 if (valorConvertido != 0) total /= valorConvertido;
-                                else { MessageBox.Show("No se puede dividir por cero"); return; }
+                                else 
+                                    { 
+                                    MessageBox.Show("No se puede dividir por cero"); 
+                                    return; 
+                                }
                                 break;
                         }
                     }
                 }
 
-                // 4. Mostramos el resultado
                 resultado.Text = total.ToString();
 
-                // TIP: Re-habilitamos todos los botones para la siguiente operación
                 HabilitarTodosLosBotones();
             }
             catch (Exception)
