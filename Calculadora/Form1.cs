@@ -25,11 +25,10 @@ namespace Calculadora
 
             // Verificamos si es un operador
             bool esOperador = (botonPresionado == suma || botonPresionado == resta ||
-                             botonPresionado == multiplicacion || botonPresionado == division);
+                             botonPresionado == multiplicacion || botonPresionado == division || botonPresionado == Modulo || botonPresionado == raiz);
 
             if (esOperador)
             {
-                // REQUERIMIENTO: Al pulsar un símbolo, actualizamos el resultado antes de seguir
                 EjecutarCalculo();
 
                 operaciones.Text += botonPresionado.Text;
@@ -45,7 +44,6 @@ namespace Calculadora
                 // Es un número (0-9)
                 operaciones.Text += botonPresionado.Text;
 
-                // REQUERIMIENTO: Bloquear Hex y Binario mientras se teclea un número decimal
                 // Solo si no estamos escribiendo un número que ya empezó con 0x o 0b
                 if (!operaciones.Text.EndsWith(botonPresionado.Text) ||
                     (!operaciones.Text.Contains("0x") && !operaciones.Text.Contains("0b")))
@@ -63,8 +61,7 @@ namespace Calculadora
             try
             {
                 string input = operaciones.Text;
-                // Separamos números de operadores
-                string[] partes = Regex.Split(input, @"([+\-/]|(?<!0)x)");
+                string[] partes = Regex.Split(input, @"([+\-/%]|(?<!0)x)");
 
                 double total = 0;
                 string operadorActual = "+";
@@ -74,7 +71,7 @@ namespace Calculadora
                     string token = parte.Trim();
                     if (string.IsNullOrEmpty(token)) continue;
 
-                    if (token == "+" || token == "-" || token == "x" || token == "/")
+                    if (token == "+" || token == "-" || token == "x" || token == "/" || token == "%")
                     {
                         operadorActual = token;
                     }
@@ -90,12 +87,15 @@ namespace Calculadora
                             case "/":
                                 if (valorConvertido != 0) total /= valorConvertido;
                                 break;
+                            case "%": 
+                                if (valorConvertido != 0) total %= valorConvertido;
+                                break;
                         }
                     }
                 }
                 resultado.Text = total.ToString();
             }
-            catch { /* Fallo silencioso para cálculo en tiempo real */ }
+            catch { /* Fallo silencioso */ }
         }
 
         private void igual_Click(object sender, EventArgs e)
@@ -105,7 +105,6 @@ namespace Calculadora
             DeshabilitarBotonesHexa();
         }
 
-        // --- MÉTODOS QUE FALTABAN (RESTAURADOS) ---
         private void Eliminar_Click(object sender, EventArgs e)
         {
             if (operaciones.Text.Length > 0)
@@ -177,6 +176,43 @@ namespace Calculadora
             resultado.Clear();
             HabilitarTodosLosBotones();
             DeshabilitarBotonesHexa();
+        }
+
+        private void Modulo_Click(object sender, EventArgs e)
+        {
+            // El módulo se comporta como una operación binaria (suma, resta, etc.)
+            if (!string.IsNullOrEmpty(operaciones.Text))
+            {
+                EjecutarCalculo(); // Calculamos lo anterior antes de poner el símbolo
+                operaciones.Text += "%";
+
+                // Reset de estados para permitir cambiar de sistema en el siguiente número
+                HabilitarTodosLosBotones();
+                DeshabilitarBotonesHexa();
+            }
+        }
+
+        private void raiz_Click(object sender, EventArgs e)
+        {
+            // La raíz suele ser una operación inmediata sobre el resultado actual
+            if (!string.IsNullOrEmpty(resultado.Text))
+            {
+                try
+                {
+                    double valorActual = double.Parse(resultado.Text);
+                    if (valorActual >= 0)
+                    {
+                        double r = Math.Sqrt(valorActual);
+                        resultado.Text = r.ToString();
+                        operaciones.Text = r.ToString(); // Actualizamos operaciones para seguir desde ahí
+                    }
+                    else
+                    {
+                        resultado.Text = "Error"; // No raíces negativas
+                    }
+                }
+                catch { }
+            }
         }
     }
 }
