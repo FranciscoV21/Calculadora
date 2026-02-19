@@ -55,8 +55,7 @@
             this.resultado = new System.Windows.Forms.TextBox();
             this.hexa = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Borrar_todo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Igual
@@ -325,22 +324,22 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // pictureBox1
+            // Borrar_todo
             // 
-            this.pictureBox1.Image = global::Calculadora.Properties.Resources.khirulislam898_city_4679928_1280;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 128);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(283, 71);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 27;
-            this.pictureBox1.TabStop = false;
+            this.Borrar_todo.Location = new System.Drawing.Point(131, 220);
+            this.Borrar_todo.Name = "Borrar_todo";
+            this.Borrar_todo.Size = new System.Drawing.Size(105, 23);
+            this.Borrar_todo.TabIndex = 27;
+            this.Borrar_todo.Text = "Borrar Todo";
+            this.Borrar_todo.UseVisualStyleBackColor = true;
+            this.Borrar_todo.Click += new System.EventHandler(this.Borrar_todo_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(323, 463);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Borrar_todo);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.hexa);
             this.Controls.Add(this.resultado);
@@ -370,7 +369,6 @@
             this.Controls.Add(this.Igual);
             this.Name = "Form1";
             this.Text = "Super calcualdora";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -405,7 +403,7 @@
         private System.Windows.Forms.TextBox resultado;
         private System.Windows.Forms.Button hexa;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Borrar_todo;
     }
 }
 

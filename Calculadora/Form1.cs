@@ -147,12 +147,7 @@ namespace Calculadora
         {
             operaciones.Text += "0b";
             // Bloquear botones (A-F y 2-9)
-            ahexa.Enabled = false;
-            bhexa.Enabled = false;
-            chexa.Enabled = false;
-            dhexa.Enabled = false;
-            ehexa.Enabled = false;
-            fhexa.Enabled = false;
+            DeshabilitarBotonesHexa();
             button2.Enabled = false; // Deshabilitar el botón Binario para evitar múltiples "0b"
             dos.Enabled = false;
             tres.Enabled = false;
@@ -163,6 +158,15 @@ namespace Calculadora
             ocho.Enabled = false;
             nueve.Enabled = false;
         }
+        private void DeshabilitarBotonesHexa()
+        {
+            ahexa.Enabled = false;
+            bhexa.Enabled = false;
+            chexa.Enabled = false;
+            dhexa.Enabled = false;
+            ehexa.Enabled = false;
+            fhexa.Enabled = false;
+        }
 
         private void operaciones_TextChanged(object sender, EventArgs e)
         {
@@ -172,6 +176,14 @@ namespace Calculadora
         private void resultado_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Borrar_todo_Click(object sender, EventArgs e)
+        {
+            operaciones.Clear();
+            resultado.Clear();
+            HabilitarTodosLosBotones();
+            DeshabilitarBotonesHexa();
         }
     }
 }
